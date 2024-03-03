@@ -1,0 +1,25 @@
+@import url('/main.css');
+
+.header__navbar_list__option .location {
+  color: var(--anchor-color);
+}
+
+.arrow {
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+.hide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -4rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background: var(--anchor-color);
+  border-radius: 50%;
+}
+
+
