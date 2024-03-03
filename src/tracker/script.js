@@ -9,9 +9,18 @@ function randomNumber(min, max) {
 const leftFrame = document.getElementById("left_frame");
 const rightFrame = document.getElementById("right_frame");
 
+const leftLandID = document.querySelector('.left_landID');
+const rightLandID = document.querySelector('.right_landID');
+
 function randomsLand() {
-    leftFrame.setAttribute('src',`${baseUrl}${randomNumber(minRange, maxRange)}`);
-    rightFrame.setAttribute('src',`${baseUrl}${randomNumber(minRange, maxRange)}`);
+    let leftID = randomNumber(minRange, maxRange);
+    let rightID = randomNumber(minRange, maxRange);
+
+    leftFrame.setAttribute('src',`${baseUrl}${leftID}`);
+    leftLandID.textContent = leftID;
+    
+    rightFrame.setAttribute('src',`${baseUrl}${rightID}`);
+    rightLandID.textContent = rightID;
 }
 
 window.addEventListener('load', randomsLand);
