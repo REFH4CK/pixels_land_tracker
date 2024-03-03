@@ -54,9 +54,12 @@ iframe {
   background: #ffffff;
   padding: .2rem .3rem;
   border-radius: .3rem;
+  width: 6rem;
+  font-size: 1rem;
 }
 
 .search_btn {
+  width: 2rem;
   background: #622AFF;
   color: #FFF;
   font-size: 1.1rem;
@@ -70,4 +73,43 @@ iframe {
 
 .search_btn:active {
   transform: scale(.97);
+}
+
+:where(.left_landID, .right_landID) {
+  position: absolute;
+  left: .7rem;
+  top: 4rem;
+  padding: .4rem;
+  background: #8a89a8;
+  font-size: 1rem;
+  border-radius: .3rem;
+}
+
+.roll {
+  position: absolute;
+  left: 48.3%;
+  top: 50%;
+  z-index: 1;
+  background: #8785db;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+  border: none;
+  outline: none;
+}
+
+.roll:disabled {
+  background: #8685dbc4;
+  cursor: not-allowed;
+}
+
+.rotate {
+  transform: rotate(360deg);
+  background: #8685dbc4;
 }
