@@ -1,0 +1,114 @@
+:root {
+  --bg-color: #181829;
+  --text-color: #ddd;
+  --text-color-1: #c4c3c3;
+  --anchor-color: #986cc2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  padding: 2rem 3rem 2rem;
+  border-bottom: 1px solid #dddddd42;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__logo_pageName {
+  color: var(--text-color);
+}
+
+.header__logo_img {
+  width: 4rem;
+}
+
+.header__navbar_list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.header__navbar_list__option a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 42%);
+  place-content: center;
+  gap: 6rem;
+  min-height: calc(100vh - 12rem);
+}
+
+.container__toolDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.container__toolDescription_title {
+  font-size: 4rem;
+}
+
+.container__toolDescription_description {
+  color: var(--text-color-1);
+  line-height: 1.4rem;
+  font-size: 1.1rem;
+}
+
+.container__landImage {
+  width: 35rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.img_container::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 35rem;
+  height: 35rem;
+  background: linear-gradient(to top, #181829 5%, transparent 70%);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 4rem;
+  border-top: 1px solid #dddddd17;
+  color: var(--text-color-1);
+}
+
+.footer__rights_social {
+  color: var(--anchor-color);
+}
+
+.footer__socials_icon {
+  cursor: pointer;
+  width: 3.5rem;
+}
