@@ -4,22 +4,26 @@
   color: var(--anchor-color);
 }
 
-.arrow {
-  color: var(--text-color);
-  font-size: 2rem;
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  min-height: calc(100vh - 12rem);
+  gap: .5rem;
+  place-content: initial;
 }
 
-.hide {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: -4rem;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-  background: var(--anchor-color);
-  border-radius: 50%;
+iframe {
+  height: calc(100vh - 12rem);
+  width: 99%;
+  border: 1px solid #dddddd42;
+  border-bottom: none;
+  border-top: none;
 }
 
+.container__left-frame {
+  border-left: none;  
+}
 
+.container__right-frame {
+  border-right: none;  
+}
