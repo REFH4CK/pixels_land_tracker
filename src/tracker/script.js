@@ -17,10 +17,10 @@ function randomsLand() {
     let rightID = randomNumber(minRange, maxRange);
 
     leftFrame.setAttribute('src',`${baseUrl}${leftID}`);
-    leftLandID.textContent = leftID;
-    
+    leftLandID.textContent = `#${leftID}`
+
     rightFrame.setAttribute('src',`${baseUrl}${rightID}`);
-    rightLandID.textContent = rightID;
+    rightLandID.textContent = `#${rightID}`;
 }
 
 window.addEventListener('load', randomsLand);
@@ -32,9 +32,11 @@ const btnRight = document.getElementById('search_btn-right');
 
 btnLeft.addEventListener('click', () => {
     leftFrame.setAttribute('src',`${baseUrl}${inputCodeLeft.value}`);
+    leftLandID.textContent = `#${inputCodeLeft.value}`
 });
 
 btnRight.addEventListener('click', () => {
     rightFrame.setAttribute('src',`${baseUrl}${inputCodeRight.value}`);
+    rightLandID.textContent = `#${inputCodeRight.value}`;
 });
 
