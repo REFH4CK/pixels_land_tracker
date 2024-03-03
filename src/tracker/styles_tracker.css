@@ -4,6 +4,10 @@
   color: var(--anchor-color);
 }
 
+body {
+  overflow: hidden;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -14,7 +18,7 @@
 
 iframe {
   height: calc(100vh - 12rem);
-  width: 99%;
+  width: 100%;
   border: 1px solid #dddddd42;
   border-bottom: none;
   border-top: none;
@@ -26,4 +30,34 @@ iframe {
 
 .container__right-frame {
   border-right: none;  
+}
+
+.container__frame {
+  position: relative;
+  width: 99%;
+}
+
+.container__frame_search {
+  display: flex;
+  gap: .5rem;
+  position: absolute;
+  left: .7rem;
+  top: .7rem;
+  padding: .4rem;
+  background: #8a89a8;
+  border-radius: .3rem;
+}
+
+:where(.code-1, .code-2, .search_btn) {
+  border: none;
+  outline: none;
+  background: #ffffff;
+  padding: .2rem .3rem;
+  border-radius: .3rem;
+}
+
+.search_btn {
+  background: #622AFF;
+  color: #FFF;
+  font-size: 1.1rem;
 }
