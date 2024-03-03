@@ -33,8 +33,25 @@
     </header>
 
     <main class="container">
-        <iframe src="" class="container__left-frame"></iframe>
-        <iframe src="" class="container__right-frame"></iframe>  
+        <section class="container__frame">
+            <div class="container__frame_search">
+                <input type="text" name="landCode-1" id="code-1" class="code-1" maxlength="4">
+                <button type="button" id="search_btn" class="search_btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <iframe src="" class="container__left-frame" id="left_frame"></iframe>
+        </section>
+
+        <section class="container__frame">
+            <div class="container__frame_search">
+                <input type="text" name="landCode-2" id="code-2" class="code-2">
+                <button type="button" id="search_btn" class="search_btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <iframe src="" class="container__right-frame" id="right_frame"></iframe>  
+        </section>
     </main>
 
     <footer class="footer">
@@ -53,6 +70,3 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-<!-- https://play.pixels.xyz/pixels/share/4363
-
--->
