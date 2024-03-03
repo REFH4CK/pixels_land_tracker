@@ -40,3 +40,14 @@ btnRight.addEventListener('click', () => {
     rightLandID.textContent = `#${inputCodeRight.value}`;
 });
 
+
+const rollButton = document.querySelector('.roll');
+const diceImg = document.querySelector('.dice');
+
+rollButton.addEventListener('click', () => {
+    rollButton.classList.add('rotate');
+});
+
+setTimeout(() => {
+    rollButton.classList.remove('rotate');
+}, 5000);
