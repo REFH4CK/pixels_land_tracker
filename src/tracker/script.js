@@ -1,6 +1,6 @@
-let baseUrl = "https://play.pixels.xyz/pixels/share/";
-let minRange = 1;
-let maxRange = 5000;
+let baseUrl = "https://play.pixels.xyz/pixels/share/"; // Base URL to share view
+let minRange = 1; // Minimun lands number
+let maxRange = 5000; // Maximun lands number
 
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -15,3 +15,4 @@ function randomsLand() {
 }
 
 window.addEventListener('load', randomsLand);
+
