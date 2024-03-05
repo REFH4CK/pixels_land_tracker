@@ -19,18 +19,9 @@ body {
 iframe {
   height: calc(100vh - 12rem);
   width: 100%;
-  border: 1px solid #dddddd42;
-  border-bottom: none;
-  border-top: none;
+  border: none;
 }
 
-.container__left-frame {
-  border-left: none;  
-}
-
-.container__right-frame {
-  border-right: none;  
-}
 
 .container__frame {
   position: relative;
@@ -43,7 +34,7 @@ iframe {
   position: absolute;
   left: .7rem;
   top: .7rem;
-  padding: .4rem;
+  padding: .6rem;
   background: #8a89a8;
   border-radius: .3rem;
 }
@@ -54,7 +45,7 @@ iframe {
   background: #ffffff;
   padding: .2rem .3rem;
   border-radius: .3rem;
-  width: 6rem;
+  width: 8rem;
   font-size: 1rem;
 }
 
@@ -83,12 +74,25 @@ iframe {
 
 :where(.left_landID, .right_landID) {
   position: absolute;
-  left: .7rem;
-  top: 4rem;
-  padding: .4rem;
+  text-align: center;
+  font-weight: bold;
+  left: 1rem;
+  top: 1rem;
+  padding: .5rem;
+  width: 4rem;
   background: #8a89a8;
   font-size: 1rem;
   border-radius: .3rem;
+}
+
+.container__frame_optionsBar {
+  position: absolute;
+  bottom: 0.2rem;
+  height: 4.5rem;
+  padding: 1rem;
+  background: #381c8538;
+  backdrop-filter: blur(.5rem);
+  width: 100%;
 }
 
 .roll {
