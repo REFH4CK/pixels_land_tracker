@@ -33,7 +33,8 @@ const btnRight = document.getElementById('search_btn-right');
 btnLeft.addEventListener('click', () => {
     if(inputCodeLeft.value != '' || inputCodeLeft.value.length != 0) {
         leftFrame.setAttribute('src',`${baseUrl}${inputCodeLeft.value}`);
-        leftLandID.textContent = `#${inputCodeLeft.value}`
+        leftLandID.textContent = `#${inputCodeLeft.value}`;
+        inputCodeLeft.removeAttribute("placeholder");
     }else {
         inputCodeLeft.setAttribute("placeholder", "Enter a Land ID");
     }
@@ -43,6 +44,7 @@ btnRight.addEventListener('click', () => {
     if(inputCodeRight.value != '' || inputCodeRight.value.length != 0) {
         rightFrame.setAttribute('src',`${baseUrl}${inputCodeRight.value}`);
         rightLandID.textContent = `#${inputCodeRight.value}`;
+        inputCodeRight.removeAttribute("placeholder");
     }else {
         inputCodeRight.setAttribute("placeholder", "Enter a Land ID");
     }
