@@ -31,13 +31,21 @@ const inputCodeRight = document.getElementById('code-2');
 const btnRight = document.getElementById('search_btn-right');
 
 btnLeft.addEventListener('click', () => {
-    leftFrame.setAttribute('src',`${baseUrl}${inputCodeLeft.value}`);
-    leftLandID.textContent = `#${inputCodeLeft.value}`
+    if(inputCodeLeft.value != '' || inputCodeLeft.value.length != 0) {
+        leftFrame.setAttribute('src',`${baseUrl}${inputCodeLeft.value}`);
+        leftLandID.textContent = `#${inputCodeLeft.value}`
+    }else {
+        inputCodeLeft.setAttribute("placeholder", "Please enter a valid ID");
+    }
 });
 
 btnRight.addEventListener('click', () => {
-    rightFrame.setAttribute('src',`${baseUrl}${inputCodeRight.value}`);
-    rightLandID.textContent = `#${inputCodeRight.value}`;
+    if(inputCodeRight.value != '' || inputCodeRight.value.length != 0) {
+        rightFrame.setAttribute('src',`${baseUrl}${inputCodeRight.value}`);
+        rightLandID.textContent = `#${inputCodeRight.value}`;
+    }else {
+        inputCodeRight.setAttribute("placeholder", "Please enter a valid ID");
+    }
 });
 
 
