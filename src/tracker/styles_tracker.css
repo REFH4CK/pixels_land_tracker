@@ -1,4 +1,4 @@
-@import url('/main.css');
+@import url('../../main.css');
 
 .header__navbar_list__option .location {
   color: var(--anchor-color);
