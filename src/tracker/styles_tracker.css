@@ -58,6 +58,12 @@ iframe {
   font-size: 1rem;
 }
 
+:where(.code-1, .code-2)::placeholder {
+  color: rgba(235, 56, 56, 0.884);
+  font-weight: bold;
+  font-size: .75rem;
+}
+
 .search_btn {
   width: 2rem;
   background: #622AFF;
