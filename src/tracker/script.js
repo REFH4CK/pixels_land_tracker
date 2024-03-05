@@ -46,8 +46,5 @@ const diceImg = document.querySelector('.dice');
 
 rollButton.addEventListener('click', () => {
     rollButton.classList.add('rotate');
+    randomsLand();
 });
-
-setTimeout(() => {
-    rollButton.classList.remove('rotate');
-}, 5000);
