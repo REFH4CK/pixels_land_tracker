@@ -120,6 +120,20 @@ body {
   width: 3.5rem;
 }
 
+.footer__socials {
+  display: flex;
+  align-items: center;
+}
+
+.footer__socials_roninDir {
+  background: #292929;
+  padding: .2rem;
+  border-radius: 1rem;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #aaa;
+}
+
 .ad {
   opacity: 0;
   visibility: hidden;
