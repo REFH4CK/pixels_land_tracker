@@ -34,27 +34,31 @@
 
     <main class="container">
         <section class="container__frame">
-            <div class="container__frame_search">
-                <input type="text" name="landCode-1" id="code-1" class="code-1" maxlength="4">
-                <button type="button" id="search_btn-left" class="search_btn">
-                    <ion-icon name="search-outline"></ion-icon>
-                </button>
-            </div>
             <span class="left_landID"></span>
             <iframe src="" class="container__left-frame frames" id="left_frame"></iframe>
+            <article class="container__frame_optionsBar">
+                <div class="container__frame_search">
+                    <input type="text" name="landCode-1" id="code-1" class="code-1" maxlength="4">
+                    <button type="button" id="search_btn-left" class="search_btn">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                </div>
+            </article>
         </section>
         <button class="roll">
             <ion-icon name="dice" class="dice"></ion-icon>
         </button>
         <section class="container__frame">
-            <div class="container__frame_search">
-                <input type="text" name="landCode-2" id="code-2" class="code-2">
-                <button type="button" id="search_btn-right" class="search_btn">
-                    <ion-icon name="search-outline"></ion-icon>
-                </button>
-            </div>
             <span class="right_landID"></span>
-            <iframe src="" class="container__right-frame frames" id="right_frame"></iframe>  
+            <iframe src="" class="container__right-frame frames" id="right_frame"></iframe>
+            <article class="container__frame_optionsBar">
+                <div class="container__frame_search">
+                    <input type="text" name="landCode-2" id="code-2" class="code-2">
+                    <button type="button" id="search_btn-right" class="search_btn">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                </div>
+            </article>  
         </section>
     </main>
 
