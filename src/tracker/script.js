@@ -35,7 +35,7 @@ btnLeft.addEventListener('click', () => {
         leftFrame.setAttribute('src',`${baseUrl}${inputCodeLeft.value}`);
         leftLandID.textContent = `#${inputCodeLeft.value}`
     }else {
-        inputCodeLeft.setAttribute("placeholder", "Please enter a valid ID");
+        inputCodeLeft.setAttribute("placeholder", "Enter a Land ID");
     }
 });
 
@@ -44,7 +44,7 @@ btnRight.addEventListener('click', () => {
         rightFrame.setAttribute('src',`${baseUrl}${inputCodeRight.value}`);
         rightLandID.textContent = `#${inputCodeRight.value}`;
     }else {
-        inputCodeRight.setAttribute("placeholder", "Please enter a valid ID");
+        inputCodeRight.setAttribute("placeholder", "Enter a Land ID");
     }
 });
 
