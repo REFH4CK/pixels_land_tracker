@@ -18,6 +18,3 @@ function copyAddress() {
 }
 
 roninIcon.addEventListener('click', copyAddress);
-
-
-// 0xd70e7713a2b21fbb525e2674aebfa7087a5d2d50
