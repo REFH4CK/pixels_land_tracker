@@ -35,6 +35,16 @@
     <main class="container">
         <section class="container__frame">
             <span class="left_landID"></span>
+            <article class="container__frame_waitLoad">
+                <l-ring-2
+                size="40"
+                stroke="5"
+                stroke-length="0.25"
+                bg-opacity="0.1"
+                speed="0.8"
+                color="white" 
+                ></l-ring-2>
+            </article>
             <iframe src="" class="container__left-frame frames" id="left_frame"></iframe>
             <article class="container__frame_optionsBar">
                 <div class="container__frame_search">
@@ -45,11 +55,23 @@
                 </div>
             </article>
         </section>
+
         <button class="roll">
             <ion-icon name="dice" class="dice"></ion-icon>
         </button>
+
         <section class="container__frame">
             <span class="right_landID"></span>
+            <article class="container__frame_waitLoad">
+                <l-ring-2
+                size="40"
+                stroke="5"
+                stroke-length="0.25"
+                bg-opacity="0.1"
+                speed="0.8"
+                color="black" 
+                ></l-ring-2>
+            </article>
             <iframe src="" class="container__right-frame frames" id="right_frame"></iframe>
             <article class="container__frame_optionsBar">
                 <div class="container__frame_search">
@@ -77,6 +99,7 @@
     <script src="script.js" type="module"></script>
     <script src="../../app.js" type="module"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/ring2.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
