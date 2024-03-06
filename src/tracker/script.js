@@ -1,5 +1,3 @@
-import { hideAd, copyAddress } from "../../app.js";
-
 const baseUrl = "https://play.pixels.xyz/pixels/share/"; // Base URL to share view
 const minRange = 1; // Minimun lands number
 const maxRange = 5000; // Maximun lands number
@@ -66,8 +64,3 @@ rollButton.addEventListener('click', () => {
         rollButton.removeAttribute('disabled');
     }, 2500);
 });
-
-let roninIcon = document.getElementById('ronin');
-let ad = document.querySelector('.ad');
-
-roninIcon.addEventListener('click', copyAddress);
