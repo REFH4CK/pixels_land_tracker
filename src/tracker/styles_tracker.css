@@ -28,6 +28,18 @@ iframe {
   width: 99%;
 }
 
+.container__frame_waitLoad {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #25253d;
+}
+
 .container__frame_search {
   display: flex;
   gap: .5rem;
@@ -74,6 +86,7 @@ iframe {
 
 :where(.left_landID, .right_landID) {
   position: absolute;
+  z-index: 12;
   text-align: center;
   font-weight: bold;
   left: 1rem;
@@ -87,6 +100,7 @@ iframe {
 
 .container__frame_optionsBar {
   position: absolute;
+  z-index: 11;
   bottom: 0.2rem;
   height: 4.5rem;
   padding: 1rem;
@@ -99,7 +113,7 @@ iframe {
   position: absolute;
   left: 48.3%;
   top: 50%;
-  z-index: 1;
+  z-index: 12;
   background: #8785db;
   width: 4rem;
   height: 4rem;
