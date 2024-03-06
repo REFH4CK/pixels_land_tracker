@@ -24,6 +24,7 @@ function randomsLand() {
 }
 
 window.addEventListener('load', randomsLand);
+const loaderLayers = document.querySelectorAll('.container__frame_waitLoad');
 
 const inputCodeLeft = document.getElementById('code-1');
 const btnLeft = document.getElementById('search_btn-left');
@@ -57,10 +58,24 @@ const diceImg = document.querySelector('.dice');
 rollButton.addEventListener('click', () => {
     rollButton.classList.add('rotate');
     rollButton.setAttribute('disabled', 'disabled');
+    loaderLayers.forEach(layer => {
+        layer.style.display = "flex";
+    });
     randomsLand();
 
     setTimeout(() => {
         rollButton.classList.remove('rotate');
         rollButton.removeAttribute('disabled');
     }, 2500);
+});
+
+const frames = document.querySelectorAll("iframe");
+
+
+frames.forEach(frame => {
+    frame.addEventListener('load', () => {
+        loaderLayers.forEach(layer => {
+            layer.style.display = "none";
+        });
+    });
 });
