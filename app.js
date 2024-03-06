@@ -1,11 +1,11 @@
 let roninIcon = document.getElementById('ronin');
 let ad = document.querySelector('.ad');
 
- export function hideAd() {
+function hideAd() {
   ad.classList.remove('show_ad');
 }
 
-export function copyAddress() {
+function copyAddress() {
     navigator.clipboard.writeText('0xd70e7713a2b21fbb525e2674aebfa7087a5d2d50')
     .then(() => {
       console.log('Texto copiado al portapapeles')
