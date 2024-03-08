@@ -3,11 +3,14 @@
   --text-color: #ddd;
   --text-color-1: #c4c3c3;
   --anchor-color: #8880fd;
+  --purple: #20205c;
+  --dark-purple: #181829;
+  --light-purple: #8a87ff;
 }
 
 @font-face {
   font-family: "Press-Start";
-  src: url('/assets/press-start-2p.woff2');
+  src: url("/assets/press-start-2p.woff2");
 }
 
 * {
@@ -18,8 +21,14 @@
 }
 
 body {
-  background: radial-gradient(circle at 0% 125%,#20205c, #181829, #181829);
+  background: radial-gradient(
+    circle at 0% 125%,
+    var(--purple),
+    var(--dark-purple),
+    var(--dark-purple)
+  );
   overflow: hidden;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=),auto;
 }
 
 .header {
@@ -35,7 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .6rem;
+  gap: 0.6rem;
 }
 
 .header__logo_pageName {
@@ -47,7 +56,7 @@ body {
 
 .header__logo_img {
   width: 3.4rem;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
 
 .header__navbar_list {
@@ -61,7 +70,8 @@ body {
   color: var(--text-color);
   font-size: 1.2rem;
   font-family: "Press-Start";
-  font-size: .9rem;
+  font-size: 0.9rem;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0,pointer;
 }
 
 .header__navbar_list__option .location {
@@ -86,7 +96,7 @@ body {
 
 .container__toolDescription_title {
   font-size: 4rem;
-  color: #8a87ff;
+  color: var(--light-purple);
 }
 
 .container__toolDescription_description {
@@ -96,45 +106,44 @@ body {
   padding: 0.8rem 0 2rem;
 }
 
-.btn{
+.btn {
   border-image-source: url(https://d31ss916pli4td.cloudfront.net/game/ui/kit/buttonpurple2.png);
   background: #622aff;
   color: #fff;
   text-shadow: 0 2px 0 #222044;
-  cursor: pointer;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0,pointer;
 }
-.btn{
-  padding: 5px 3px;
+.btn {
+  padding: .32rem .2rem;
   border-image-slice: 12 12 12 12 fill;
-  border-image-width: 12px 12px 12px 12px;
+  border-image-width: 0.75rem;
   border-image-outset: 0 0 0 0;
   border-image-repeat: repeat repeat;
   border-style: solid;
-  border-radius: 12px;
-  border-width: 5px;
-  font-size: 16px;
-  margin: 4px;
-  font-family: 'Press-Start', sans-serif;
+  border-radius: .75rem;
+  border-width: 0.3rem;
+  font-size: 1rem;
+  margin: 0.4rem;
+  font-family: "Press-Start", sans-serif;
   width: 20rem;
   height: 4.2rem;
 }
 
 button {
-  font-size: 15px;
-  padding: 0.7em 2.7em;
-  letter-spacing: 0.06em;
+  font-size: 0.9rem;
+  padding: 0.7rem 2.7rem;
   position: relative;
-  border-radius: 0.6em;
+  border-radius: 0.6rem;
   overflow: hidden;
   transition: all 0.3s;
-  line-height: 1.4em;
-  color: var(--green);
-  box-shadow: inset 0 0 10px rgba(229, 240, 235, 0.4), 0 0 9px 3px rgba(21, 119, 231, 0.1);
+  box-shadow: inset 0 0 10px rgba(229, 240, 235, 0.4),
+    0 0 9px 3px rgba(21, 119, 231, 0.1);
 }
 
 button:hover {
   color: #fdfdff;
-  box-shadow: inset 0 0 10px rgba(136, 161, 241, 0.6), 0 0 9px 3px rgba(157, 155, 255, 0.2);
+  box-shadow: inset 0 0 10px rgba(136, 161, 241, 0.6),
+    0 0 9px 3px rgba(157, 155, 255, 0.2);
 }
 
 button:before {
@@ -144,15 +153,21 @@ button:before {
   width: 14em;
   height: 100%;
   top: 0;
-  transition: transform .4s ease-in-out;
-  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(59, 92, 243, 0.1) 60% , transparent 100%);
+  transition: transform 0.4s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(27, 253, 156, 0.1) 40%,
+    rgba(59, 92, 243, 0.1) 60%,
+    transparent 100%
+  );
 }
 
 button:hover:before {
   transform: translateX(25em);
 }
 
-.img_container{
+.img_container {
   width: 35rem;
 }
 
@@ -184,10 +199,11 @@ button:hover:before {
 
 .footer__rights_social {
   color: var(--anchor-color);
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0,pointer;
 }
 
 .footer__socials_icon {
-  cursor: pointer;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0,pointer;
   width: 3.5rem;
 }
 
