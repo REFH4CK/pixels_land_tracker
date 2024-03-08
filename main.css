@@ -3,12 +3,11 @@
   --text-color: #ddd;
   --text-color-1: #c4c3c3;
   --anchor-color: #8880fd;
-  
 }
 
 @font-face {
-  font-family: "PressStart";
-  src: url('/assets/press-start-2p-v14-latin-regular.woff2');
+  font-family: "Press-Start";
+  src: url('/assets/press-start-2p.woff2');
 }
 
 * {
@@ -43,7 +42,7 @@ body {
   color: var(--text-color);
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-family: "PressStart";
+  font-family: "Press-Start";
 }
 
 .header__logo_img {
@@ -61,7 +60,7 @@ body {
   text-decoration: none;
   color: var(--text-color);
   font-size: 1.2rem;
-  font-family: "PressStart";
+  font-family: "Press-Start";
   font-size: .9rem;
 }
 
@@ -115,7 +114,7 @@ body {
   border-width: 5px;
   font-size: 16px;
   margin: 4px;
-  font-family: 'PressStart', sans-serif;
+  font-family: 'Press-Start', sans-serif;
   width: 20rem;
   height: 4.2rem;
 }
