@@ -1,18 +1,29 @@
-@import url('../../main.css');
+@import url("../../main.css");
 
 .header__navbar_list__option .location {
   color: var(--anchor-color);
 }
 
+.header {
+  background: radial-gradient(
+    circle at 0% 125%,
+    #1d1d33,
+    var(--dark-purple),
+    #07071c
+  );
+}
+
 body {
   overflow: hidden;
+  /* background: radial-gradient(circle at 27% 50%,rgba(8, 10, 129, 1), rgba(39, 39, 58, 1)); */
+  background: radial-gradient(ellipse at 125% 125%, #181829, #1f1f51, #1c1c43);
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   min-height: calc(100vh - 12rem);
-  gap: .5rem;
+  gap: 0.6rem;
   place-content: initial;
 }
 
@@ -21,7 +32,6 @@ iframe {
   width: 100%;
   border: none;
 }
-
 
 .container__frame {
   position: relative;
@@ -42,38 +52,38 @@ iframe {
 
 .container__frame_search {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   position: absolute;
-  left: .7rem;
-  top: .7rem;
-  padding: .6rem;
+  left: 0.7rem;
+  top: 0.7rem;
+  padding: 0.6rem;
   background: #8a89a8;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 :where(.code-1, .code-2, .search_btn) {
   border: none;
   outline: none;
   background: #ffffff;
-  padding: .2rem .3rem;
-  border-radius: .3rem;
-  width: 8rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.2rem;
+  width: 9rem;
   font-size: 1rem;
 }
 
 :where(.code-1, .code-2)::placeholder {
   color: rgba(235, 56, 56, 0.884);
   font-weight: bold;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .search_btn {
   width: 2rem;
-  background: #622AFF;
-  color: #FFF;
+  background: #622aff;
+  color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background .1s ease-in-out, transform .1s ease-in-out;
+  transition: background 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
 
 .search_btn:hover {
@@ -81,31 +91,30 @@ iframe {
 }
 
 .search_btn:active {
-  transform: scale(.97);
+  transform: scale(0.97);
 }
 
 :where(.left_landID, .right_landID) {
   position: absolute;
   z-index: 12;
   text-align: center;
-  font-weight: bold;
-  left: 1rem;
-  top: 1rem;
-  padding: .5rem;
-  width: 4rem;
-  background: #8a89a8;
-  font-size: 1rem;
-  border-radius: .3rem;
+  right: 1rem;
+  top: 2rem;
+  padding: 1.5rem 1.5rem 1rem;
+  background: url("../../images/wood.png") no-repeat center / contain;
+  font-size: 0.85rem;
+  border-radius: 0.3rem;
+  color: var(--white);
+  font-family: "Press-Start", sans-serif;
 }
 
 .container__frame_optionsBar {
   position: absolute;
   z-index: 11;
-  bottom: 0.2rem;
+  bottom: 0rem;
   height: 4.5rem;
   padding: 1rem;
-  background: #381c8538;
-  backdrop-filter: blur(.5rem);
+
   width: 100%;
 }
 
@@ -114,7 +123,7 @@ iframe {
   left: 48.3%;
   top: 50%;
   z-index: 12;
-  background: #8785db;
+  background: #e5e5fb;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -123,17 +132,17 @@ iframe {
   align-items: center;
   font-size: 1.8rem;
   cursor: pointer;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   border: none;
   outline: none;
 }
 
 .roll:disabled {
-  background: #8685dbc4;
+  background: #e5e5fb96;
   cursor: not-allowed;
 }
 
 .rotate {
   transform: rotate(360deg);
-  background: #8685dbc4;
+  background: #e5e5fb96;
 }

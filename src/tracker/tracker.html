@@ -1,105 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An optimized tool for tracking various Pixel lands and discovering lands of interest related to resources, industries, planting spaces, caves, chicken coops, windmills, and more.">
-    <meta name="keywords" content="Pixels Tracker, Land tracker, Pixels Lands Tracker, Ver lands pixels, Watch pixels Lands">
-    <meta name="author" content="REFH4CK">
-    <link rel="canonical" href="landtracker">
-    <link rel="stylesheet" href="styles_tracker.css">
-    <link rel="shortcut icon" href="../../images/satellite.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An optimized tool for tracking various Pixel lands and discovering lands of interest related to resources, industries, planting spaces, caves, chicken coops, windmills, and more." />
+    <meta name="keywords" content="Pixels Tracker, Land tracker, Pixels Lands Tracker, Ver lands pixels, Watch pixels Lands" />
+    <meta name="author" content="REFH4CK" />
+    <link rel="canonical" href="landtracker" />
+    <link rel="stylesheet" href="styles_tracker.css" />
+    <link rel="shortcut icon" href="../../images/satellite.png" type="image/x-icon" />
     <title>Land Tracker</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <article class="header__logo">
-            <img src="../../images/satellite.png" alt="Satellite image" class="header__logo_img">
-            <h1 class="header__logo_pageName">Land Tracker</h1>
-        </article>
-        <nav class="header__navbar">
-            <ul class="header__navbar_list">
-                <li class="header__navbar_list__option">
-                    <a href="../../">Home</a>
-                </li>
-                <li class="header__navbar_list__option">
-                    <a href="#" class="location">Use land tracker</a>
-                </li>
-                <li class="header__navbar_list__option">
-                    <a href="mailto:refh4ck.dev@gmail.com">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <article class="header__logo">
+        <img src="../../images/satellite.png" alt="Satellite image" class="header__logo_img" />
+        <h1 class="header__logo_pageName">Land Tracker</h1>
+      </article>
+      <nav class="header__navbar">
+        <ul class="header__navbar_list">
+          <li class="header__navbar_list__option">
+            <a href="../../">Home</a>
+          </li>
+          <li class="header__navbar_list__option">
+            <a href="mailto:refh4ck.dev@gmail.com">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="container">
-        <section class="container__frame">
-            <span class="left_landID"></span>
-            <article class="container__frame_waitLoad">
-                <l-ring-2
-                size="40"
-                stroke="5"
-                stroke-length="0.25"
-                bg-opacity="0.1"
-                speed="0.8"
-                color="white" 
-                ></l-ring-2>
-            </article>
-            <iframe src="" class="container__left-frame frames" id="left_frame"></iframe>
-            <article class="container__frame_optionsBar">
-                <div class="container__frame_search">
-                    <input type="text" name="landCode-1" id="code-1" class="code-1" maxlength="4">
-                    <button type="button" id="search_btn-left" class="search_btn">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </button>
-                </div>
-            </article>
-        </section>
+      <section class="container__frame">
+        <span class="left_landID"></span>
+        <article class="container__frame_waitLoad">
+          <l-ring-2
+            size="40"
+            stroke="5"
+            stroke-length="0.25"
+            bg-opacity="0.1"
+            speed="0.8"
+            color="white"
+          ></l-ring-2>
+        </article>
+        <iframe
+          src=""
+          class="container__left-frame frames"
+          id="left_frame"
+        ></iframe>
+        <article class="container__frame_optionsBar">
+          <div class="container__frame_search">
+            <input
+              type="text"
+              name="landCode-1"
+              id="code-1"
+              class="code-1"
+              maxlength="4"
+            />
+            <button type="button" id="search_btn-left" class="search_btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+        </article>
+      </section>
 
-        <button class="roll">
-            <ion-icon name="dice" class="dice"></ion-icon>
-        </button>
+      <button class="roll">
+        <ion-icon name="dice" class="dice"></ion-icon>
+      </button>
 
-        <section class="container__frame">
-            <span class="right_landID"></span>
-            <article class="container__frame_waitLoad">
-                <l-ring-2
-                size="40"
-                stroke="5"
-                stroke-length="0.25"
-                bg-opacity="0.1"
-                speed="0.8"
-                color="white" 
-                ></l-ring-2>
-            </article>
-            <iframe src="" class="container__right-frame frames" id="right_frame"></iframe>
-            <article class="container__frame_optionsBar">
-                <div class="container__frame_search">
-                    <input type="text" name="landCode-2" id="code-2" class="code-2">
-                    <button type="button" id="search_btn-right" class="search_btn">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </button>
-                </div>
-            </article>  
-        </section>
+      <section class="container__frame">
+        <span class="right_landID"></span>
+        <article class="container__frame_waitLoad">
+          <l-ring-2
+            size="40"
+            stroke="5"
+            stroke-length="0.25"
+            bg-opacity="0.1"
+            speed="0.8"
+            color="white"
+          ></l-ring-2>
+        </article>
+        <iframe
+          src=""
+          class="container__right-frame frames"
+          id="right_frame"
+        ></iframe>
+        <article class="container__frame_optionsBar">
+          <div class="container__frame_search">
+            <input type="text" name="landCode-2" id="code-2" class="code-2" />
+            <button type="button" id="search_btn-right" class="search_btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer class="footer">
-        <p class="footer__rights">
-            All development rights reserved &copy; Made with ❤️ <a href="https://github.com/REFH4CK" target="_blank" class="footer__rights_social">REFH4CK</a>
-        </p>
-        <span>|</span>
-        <div class="footer__socials">
-            <span class="ad">Copied!</span>
-            <img src="../../images/ronin-wallet-icon.png" alt="" class="footer__socials_icon" id="ronin">
-            <p class="footer__socials_roninDir">0xd70e7713a2b21fbb525e2674aebfa7087a5d2d50</p>
-        </div>
+      <p class="footer__rights">
+        All development rights reserved &copy; Made with ❤️
+        <a href="https://github.com/REFH4CK" target="_blank" class="footer__rights_social">REFH4CK</a>
+      </p>
+      <span>|</span>
+      <div class="footer__socials">
+        <span class="ad">Copied!</span>
+        <img src="../../images/ronin-wallet-icon.png" alt="" class="footer__socials_icon" id="ronin" />
+        <p class="footer__socials_roninDir">0xd70e7713a2b21fbb525e2674aebfa7087a5d2d50</p>
+      </div>
     </footer>
-    
+
     <script src="script.js" type="module"></script>
     <script src="../../app.js" type="module"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/ring2.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+  </body>
 </html>
