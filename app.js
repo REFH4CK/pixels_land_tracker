@@ -1,5 +1,6 @@
 let roninIcon = document.getElementById('ronin');
 let ad = document.querySelector('.ad');
+let btnStarted = document.querySelector('.btn');
 
 function hideAd() {
   ad.classList.remove('show_ad');
@@ -18,3 +19,7 @@ function copyAddress() {
 }
 
 roninIcon.addEventListener('click', copyAddress);
+
+btnStarted.addEventListener('click', ()=>{
+   window.location.href = "https://refh4ck.github.io/pixels_land_tracker/src/tracker/tracker.html";
+});

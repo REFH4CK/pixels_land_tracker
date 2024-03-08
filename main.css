@@ -2,7 +2,13 @@
   --bg-color: #181829;
   --text-color: #ddd;
   --text-color-1: #c4c3c3;
-  --anchor-color: #986cc2;
+  --anchor-color: #8880fd;
+  
+}
+
+@font-face {
+  font-family: "PressStart";
+  src: url('/assets/press-start-2p-v14-latin-regular.woff2');
 }
 
 * {
@@ -13,32 +19,36 @@
 }
 
 body {
-  background: var(--bg-color);
+  background: radial-gradient(circle at 0% 125%,#20205c, #181829, #181829);
+  overflow: hidden;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8rem;
-  padding: 2rem 3rem 2rem;
-  border-bottom: 1px solid #dddddd42;
-  transition: height .15s ease-in-out;
+  height: 6rem;
+  padding: 2.3rem 3rem 2rem;
+  border-bottom: 1px solid #9686df1a;
 }
 
 .header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: .6rem;
 }
 
 .header__logo_pageName {
   color: var(--text-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "PressStart";
 }
 
 .header__logo_img {
-  width: 4rem;
+  width: 3.4rem;
+  margin-top: .3rem;
 }
 
 .header__navbar_list {
@@ -50,7 +60,9 @@ body {
 .header__navbar_list__option a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-family: "PressStart";
+  font-size: .9rem;
 }
 
 .header__navbar_list__option .location {
@@ -58,10 +70,10 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(2, 42%);
-  place-content: center;
-  gap: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
   min-height: calc(100vh - 12rem);
 }
 
@@ -69,19 +81,80 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem;
-  width: 100%;
+  width: 43rem;
   color: var(--text-color);
 }
 
 .container__toolDescription_title {
   font-size: 4rem;
+  color: #8a87ff;
 }
 
 .container__toolDescription_description {
   color: var(--text-color-1);
-  line-height: 1.4rem;
-  font-size: 1.1rem;
+  line-height: 1.6rem;
+  font-size: 1.15rem;
+  padding: 0.8rem 0 2rem;
+}
+
+.btn{
+  border-image-source: url(https://d31ss916pli4td.cloudfront.net/game/ui/kit/buttonpurple2.png);
+  background: #622aff;
+  color: #fff;
+  text-shadow: 0 2px 0 #222044;
+  cursor: pointer;
+}
+.btn{
+  padding: 5px 3px;
+  border-image-slice: 12 12 12 12 fill;
+  border-image-width: 12px 12px 12px 12px;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: repeat repeat;
+  border-style: solid;
+  border-radius: 12px;
+  border-width: 5px;
+  font-size: 16px;
+  margin: 4px;
+  font-family: 'PressStart', sans-serif;
+  width: 20rem;
+  height: 4.2rem;
+}
+
+button {
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(229, 240, 235, 0.4), 0 0 9px 3px rgba(21, 119, 231, 0.1);
+}
+
+button:hover {
+  color: #fdfdff;
+  box-shadow: inset 0 0 10px rgba(136, 161, 241, 0.6), 0 0 9px 3px rgba(157, 155, 255, 0.2);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 14em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(59, 92, 243, 0.1) 60% , transparent 100%);
+}
+
+button:hover:before {
+  transform: translateX(25em);
+}
+
+.img_container{
+  width: 35rem;
 }
 
 .container__landImage {
@@ -106,8 +179,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  height: 4rem;
-  border-top: 1px solid #dddddd17;
+  height: 6rem;
   color: var(--text-color-1);
 }
 
@@ -127,9 +199,9 @@ body {
 
 .footer__socials_roninDir {
   background: #25253d;
-  padding: .2rem .7rem;
+  padding: 0.2rem 0.7rem;
   border-radius: 1rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: bold;
   color: #aaa;
 }
@@ -139,13 +211,13 @@ body {
   visibility: hidden;
   position: absolute;
   bottom: 3.5rem;
-  margin-left: .2rem;
+  margin-left: 0.2rem;
   background: #fff;
-  padding: .2rem;
-  font-size: .8rem;
+  padding: 0.2rem;
+  font-size: 0.8rem;
   color: var(--bg-color);
-  border-radius: .3rem;
-  transition: opacity .15s ease-in-out, visibility .15s ease-in-out;
+  border-radius: 0.3rem;
+  transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
 }
 
 .show_ad {
