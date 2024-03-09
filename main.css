@@ -152,7 +152,7 @@ body {
 }
 
 .container__toolDescription button:active {
-  transform: scale(.98);
+  transform: scale(0.98);
   transform: translateY(2px);
 }
 
@@ -205,6 +205,8 @@ body {
   gap: 1rem;
   height: 6rem;
   color: var(--text-color-1);
+
+  /* Responsive Design (1440 - 1366 - 1240 - 1100 - 800) */
 }
 
 .footer__rights_social {
@@ -252,4 +254,83 @@ body {
 .show_ad {
   opacity: 1;
   visibility: visible;
+}
+
+/* Responsive Design (1440 - 1366 - 1240 - 1024 - 768 - 425/320) */
+
+@media (width <= 1440px) and (width >= 1366px) {
+  .container {
+    gap: 7rem;
+    min-height: calc(100vh - 11rem);
+  }
+  .container__toolDescription {
+    width: 37rem;
+  }
+  .container__toolDescription_title {
+    font-size: 3rem;
+  }
+  .container__toolDescription_description {
+    font-size: 1.05rem;
+  }
+  .btn {
+    padding: 0.2rem 0.2rem;
+    width: 18rem;
+  }
+  .img_container {
+    width: 30rem;
+  }
+  .container__landImage {
+    width: 30rem;
+  }
+  .img_container::before {
+    background: linear-gradient(to top, #181829 18%, transparent 70%);
+  }
+  .footer {
+    height: 5rem;
+  }
+}
+
+@media (width: 1240px) {
+  .header {
+    height: 5rem;
+  }
+  .header__logo_pageName {
+    font-size: 1.1rem;
+  }
+  .header__logo_img{
+    width: 2.8rem;
+  }
+  .header__navbar_list__option a {
+    font-size: 0.8rem;
+  }
+  .container {
+    gap: 4rem;
+    min-height: calc(100vh - 10rem);
+  }
+  .container__toolDescription {
+    width: 35rem;
+  }
+  .container__toolDescription_title {
+    font-size: 2.7rem;
+  }
+  .container__toolDescription_description {
+    font-size: 1.04rem;
+    padding: 0.8rem 0 1.3rem;
+  }
+  .btn {
+    width: 16rem;
+    height: 4rem;
+  }
+  .img_container {
+    width: 28rem;
+  }
+  .container__landImage {
+    width: 30rem;
+  }
+  .img_container::before {
+    width: 30rem;
+  }
+  .footer {
+    height: 5rem;
+  }
 }
