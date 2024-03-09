@@ -257,3 +257,35 @@ body {
 }
 
 /* Responsive Design (1440 - 1366 - 1240 - 1024 - 768 - 425/320) */
+
+@media (width: 1440px) {
+  .container {
+    gap: 7rem;
+    min-height: calc(100vh - 11rem);
+  }
+  .container__toolDescription {
+    width: 37rem;
+  }
+  .container__toolDescription_title {
+    font-size: 3rem;
+  }
+  .container__toolDescription_description {
+    font-size: 1.05rem;
+  }
+  .btn {
+    padding: 0.2rem 0.2rem;
+    width: 18rem;
+  }
+  .img_container {
+    width: 30rem;
+  }
+  .container__landImage {
+    width: 30rem;
+  }
+  .img_container::before {
+    background: linear-gradient(to top, #181829 18%, transparent 70%);
+  }
+  .footer {
+    height: 5rem;
+  }
+}
