@@ -152,7 +152,7 @@ body {
 }
 
 .container__toolDescription button:active {
-  transform: scale(.98);
+  transform: scale(0.98);
   transform: translateY(2px);
 }
 
@@ -205,6 +205,8 @@ body {
   gap: 1rem;
   height: 6rem;
   color: var(--text-color-1);
+
+  /* Responsive Design (1440 - 1366 - 1240 - 1100 - 800) */
 }
 
 .footer__rights_social {
@@ -253,3 +255,5 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+/* Responsive Design (1440 - 1366 - 1240 - 1024 - 768 - 425/320) */
