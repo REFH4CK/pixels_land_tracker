@@ -290,7 +290,7 @@ body {
   }
 }
 
-@media (width: 1240px) {
+@media (width: 1280px) {
   .header {
     height: 5rem;
   }
