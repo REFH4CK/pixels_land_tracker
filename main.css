@@ -205,8 +205,6 @@ body {
   gap: 1rem;
   height: 6rem;
   color: var(--text-color-1);
-
-  /* Responsive Design (1440 - 1366 - 1240 - 1100 - 800) */
 }
 
 .footer__rights_social {
@@ -229,8 +227,8 @@ body {
 }
 
 .footer__socials_roninDir {
-  background: #25253d;
-  padding: 0.2rem 0.7rem;
+  background: #35354b;
+  padding: 0.5rem 0.7rem;
   border-radius: 1rem;
   font-size: 0.9rem;
   font-weight: bold;
@@ -256,9 +254,7 @@ body {
   visibility: visible;
 }
 
-/* Responsive Design (1440 - 1366 - 1240 - 1024 - 768 - 425/320) */
-
-@media (width <= 1440px) and (width >= 1360px) {
+@media (width <= 1500px) and (width >= 1300px) {
   .container {
     gap: 7rem;
     min-height: calc(100vh - 11rem);
@@ -290,14 +286,14 @@ body {
   }
 }
 
-@media (width <= 1280px) and (width >= 1240px) {
+@media (width <= 1299px) and (width >= 1200px) {
   .header {
     height: 5rem;
   }
   .header__logo_pageName {
     font-size: 1.1rem;
   }
-  .header__logo_img{
+  .header__logo_img {
     width: 2.8rem;
   }
   .header__navbar_list__option a {
@@ -332,5 +328,151 @@ body {
   }
   .footer {
     height: 5rem;
+  }
+}
+
+@media (width <= 1199px) and (width >= 1000px) {
+  .container {
+    gap: 5rem;
+  }
+  .container__toolDescription {
+    width: 29rem;
+  }
+  .container__toolDescription_title {
+    font-size: 2.7rem;
+  }
+  .container__toolDescription_description {
+    font-size: 1.04rem;
+    padding: 0.8rem 0 1.3rem;
+  }
+  .btn {
+    width: 18rem;
+    height: 4rem;
+  }
+  .img_container {
+    width: 27rem;
+  }
+  .container__landImage {
+    width: 100%;
+  }
+  .img_container::before {
+    width: 27rem;
+    height: 27rem;
+  }
+  .footer {
+    height: 5rem;
+  }
+}
+
+/* @media (width <= 999px) and (width >= 800px) {
+  .container {
+    gap: 2.5rem;
+    flex-direction: column;
+  }
+  .container__toolDescription {
+    width: 29rem;
+  }
+  .container__toolDescription_title {
+    font-size: 2.7rem;
+  }
+  .container__toolDescription_description {
+    font-size: 1.04rem;
+    padding: 0.8rem 0 1.3rem;
+  }
+  .btn {
+    width: 18rem;
+    height: 4rem;
+  }
+  .img_container {
+    width: 27rem;
+  }
+  .container__landImage {
+    width: 100%;
+  }
+  .img_container::before {
+    width: 27rem;
+    height: 27rem;
+  }
+  .footer {
+    height: 5rem;
+  }
+} */
+
+@media (width <= 720px) and (width >= 320px) {
+  .header {
+    padding: .5rem .5rem 2rem ;
+    border: none;
+  }
+  .header__logo_pageName {
+    font-size: 1rem;
+    word-spacing: -10px;
+  }
+  .header__logo_img {
+    width: 2.3rem;
+  }
+  .header__navbar_list {
+    display: none;
+    gap: 2rem;
+    list-style: none;
+  }
+  body {
+    overflow: auto;
+    background: radial-gradient(
+      circle at 0% 145%,
+      var(--purple),
+      var(--dark-purple),
+      var(--dark-purple)
+    );
+  }
+  .container {
+    flex-direction: column-reverse;
+    justify-content: start;
+    gap: 0rem;
+    min-height: calc(100vh - 14.5rem);
+  }
+  .container__toolDescription {
+    width: 24rem;
+  }
+  .container__toolDescription_title {
+    display: none;
+  }
+  .container__toolDescription_description {
+    display: none;
+  }
+  .btn {
+    width: 100%;
+    height: 4rem;
+  }
+  .img_container {
+    width: 30rem;
+    margin-bottom: 5rem;
+  }
+  .container__landImage {
+    width: 100%;
+  }
+  .img_container::before {
+    width: 30rem;
+    height: 30rem;
+    background: linear-gradient(to top, #181829 8%, transparent 70%);
+  }
+  .footer {
+    height: 5rem;
+    flex-direction: column-reverse;
+    font-size: 0.9rem;
+    padding-bottom: 2.5rem;
+  }
+  .footer__socials_icon {
+    width: 3rem;
+  }
+  .footer__socials {
+    display: flex;
+    align-items: center;
+  }
+  .separator {
+    display: none;
+  }
+
+  .footer__socials_roninDir {
+    font-size: 0.9rem;
   }
 }
