@@ -224,6 +224,7 @@ body {
 .footer__socials {
   display: flex;
   align-items: center;
+  z-index: 100;
 }
 
 .footer__socials_roninDir {
